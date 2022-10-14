@@ -21,16 +21,22 @@ regular expression, a regex is a string of text that lets you create patterns th
 - [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
+
 ## Regex Components
+
 This regex contains two methods, exec() and test(). These methods are often used in combination with the string methods that are in JavaScript. 
 
+
 ### Anchors
+
 Regex Anchors are used to notate positions, rather than characters. There are to anchor characters in JavaScript's Regex function. 
 
 - ^ - By default, the match must occur at the beginning of the string.
 - $ - 	By default, the match must occur at the end of the string or before \n at the end of the string.
 
+
 ### Quantifiers
+
 Quantifiers determine the number of instances a string must have for the searched pattern. 
 
  +  quantifier matches the preceding element one or more times.
@@ -53,10 +59,12 @@ Quantifiers determine the number of instances a string must have for the searche
 
 
 ### OR Operator
+
 A "|" is used to as an OR operator in the JavaScript regex. If multiple patterns are being searched, can be seperated with the |
 
 
 ### Character Classes
+
 Character classes identifies the type of character or characters being searched for.
 
  [abcd] or [a-d]  both patterns do the same thing. The first matches each of the characters listed  while the second matches any characters within specific range
@@ -69,3 +77,54 @@ Character classes identifies the type of character or characters being searched 
  s  Matches spacing.
  S -Acts as the NOT operator for s.
 
+
+ ### Flags
+
+ Flags are to specify  allowed parameters within a search. 
+s  - allows a dot to act as a newline character.
+i - specifies case does not matter for the characters used in the pattern.
+m  - traverses multiple lines of a queried string.
+y  - searches the exact position of the pattern.
+g  - returns all instances of the pattern, instead of just the first.
+u  - allows Unicode support.
+
+ 
+ ### Grouping and Capturing
+
+ In Javascript's regex,() means either of the patters can appear in the queried text.Then  [] targets groups of characters that are being searched for, as mentioned above. 
+ 
+
+ ### Bracket Expressions
+
+ Bracket expressions simply reference the form-factor of the grouping characters. 
+ 
+
+ ### Greedy and Lazy Match
+
+ Greedy and lazy is what is returned from a matching pattern. ? will stop after the first instance while * is considered greedy, because it will continue for each sequential matching character.
+ 
+
+ ### Boundaries
+
+ The boundary operator \b  searches word positioning.
+ 
+
+ ### Back-references
+
+ Back-references is used to store found value and group items found in between those symbols/named instances. 
+ 
+
+ ### Look-ahead and Look-behind
+
+ There is a combination of four types of "lookaround" operators:
+ - X(?=Y) - This pattern is called a positive lookahead, and would match any instance of X that is followed by Y.
+ - X(?!Y) - Is the negation of the previous example. Known as a negative lookahead.
+ - (?<=Y)X - This pattern is called a positive lookbehind, and would match any instance of X that is behind Y. 
+ - (?<!Y)X - Is the negation of the previous example. Known as a negative lookbehind. 
+ 
+
+ ## Author
+
+ [Joel A Rivera Rivera](https://github.com/Jrivera239)
+ 
+ I have commited myself to become a fullstack developer. I have choosen different careers in my life but never been as determine as I have with developer. I currenty reside in Kissimmee, Florida and am absolutely willing to relocate for a greater future in life. I'm a dedicated individual who pursuits goals and this is a goal of mine with many more to accomplish.
